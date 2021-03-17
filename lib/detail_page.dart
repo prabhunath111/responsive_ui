@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:places_app/place.dart';
-import 'package:places_app/places_data.dart';
+
+import 'model/place_data.dart';
 
 class DetailPage extends StatelessWidget {
-  final Place place;
+  final place;
   DetailPage(this.place);
   @override
   Widget build(BuildContext context) {
