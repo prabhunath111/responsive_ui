@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'model/place_data.dart';
 
 class DetailPage extends StatelessWidget {

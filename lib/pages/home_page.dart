@@ -3,7 +3,6 @@ import 'package:places_app/model/place.dart';
 import 'package:places_app/model/place_data.dart';
 import 'package:places_app/pages/place_details_page.dart';
 import 'package:places_app/widgets/places_gallery.dart';
-
 import '../places_responsive_app.dart';
 
 
@@ -15,7 +14,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Place selectedPlace = Places().getPlaces()[0];
   void handlePlaceChanged(Place newPlace) {
-
+    setState(() {
+      selectedPlace = newPlace;
+    });
   }
   @override
   Widget build(BuildContext context) {
