@@ -30,7 +30,7 @@ class PlaceDetails extends StatelessWidget {
             Expanded(
                 child: Column(
                   children: [
-                    Image.asset('assets/images/pic1.jpg'),
+                    Image.asset(place.image),
                     titleSection(),
                   ],
                 )
